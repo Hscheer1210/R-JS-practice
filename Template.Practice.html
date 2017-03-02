@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC “-//w3c//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+ 
+<html xmlns=“http://www.w3.org/1999/xhtml” lang=“en” xml:lang=“en”>
+ 
+<head>
+	<style>
+ 
+	fieldset {
+		margin: 50 450 50 450;
+		text-align: left;
+	}
+ 
+	table {
+		border-width: 0.25em;
+		border-style: solid;
+		border-collapse: collapse;
+		border-spacing: 5px;
+		padding: 10px;
+		border-color: black;
+	}
+ 
+	form.mc1 {
+		font-family: papyrus;
+	}
+ 
+	</style>
+ 
+  <meta name="author" content="Hannah Scheer"> </meta>
+  <meta name="description" content="XHTML Practice"> </meta>
+  <meta name="keywords" content=“Practice, XHTML, CSS, JavaScript”> </meta> 
+  <meta content=“width=device-width, initial-scale=1”> </meta>
+  <meta charset="UTF-8"> </meta>
+ 
+ <!-- Refresh page
+ 
+  <meta http-equiv="refresh" content="60"> </meta>
+ 
+ -->
+ 
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+ 
+<fieldset style="margin-right: 50;margin-left: 50;">
+ 
+ 
+<script language="JavaScript">
+	function writeAnswer (form) {
+		var One = form.one.value;
+		var Two = form.two.value;
+		var Three = form.three.value;
+		var Four = form.four.value;
+		var Five = form.five.value;
+		var Six = form.six.value;
+		var Seven = form.seven.value;
+		var Eight = form.eight.value;
+		var Nine = form.nine.value;
+		var Ten = form.ten.value;
+		var Eleven = form.eleven.value;
+		var Twelve = form.twelve.value;
+		var Thirteen = form.thirteen.value;
+		var Fourteen = form.fourteen.value;
+		var Fifteen = form.fifteen.value;
+		var Sixteen = form.sixteen.value;
+ 
+ 
+			switch(One) {
+				case "True":
+					form.answer1.value = "Incorrect";
+					form.TF1.value = "0";
+					break;
+				case "False":
+					form.answer1.value = "Correct";
+					form.TF1.value = "1";
+					break;
+				}
+ 
+			switch(Two) {
+				case "True":
+					form.answer2.value = "Correct";
+					form.TF2.value = "1";
+					break;
+				case "False":
+					form.answer2.value = "Incorrect";
+					form.TF2.value = "0";
+					break;
+				}
+ 
+			switch(Three) {
+				case "True":
+					form.answer3.value = "Correct";
+					form.TF3.value = "1";
+					break;
+				case "False":
+					form.answer3.value = "Incorrect";
+					form.TF3.value = "0";
+					break;
+				}
+ 
+			switch(Four) {
+				case "True":
+					form.answer4.value = "Correct";
+					form.TF4.value = "1";
+					break;
+				case "False":
+					form.answer4.value = "Incorrect";
+					form.TF4.value = "0";
+					break;
+				}
+ 
+			switch(Five) {
+				case "True":
+					form.answer5.value = "Incorrect";
+					form.TF5.value = "0";
+					break;
+				case "False":
+					form.answer5.value = "Correct";
+					form.TF5.value = "1";
+					break;
+				}
+ 
+			switch(Six) {
+				case "True":
+					form.answer6.value = "Correct";
+					form.TF6.value = "1";
+					break;
+				case "False":
+					form.answer6.value = "Incorrect";
+					form.TF6.value = "0";
+					break;
+				}
+ 
+			switch(Seven) {
+				case "True":
+					form.answer7.value = "Incorrect";
+					form.TF7.value = "0";
+					break;
+				case "False":
+					form.answer7.value = "Correct";
+					form.TF7.value = "1";
+					break;
+				}
+ 
+			switch(Eight) {
+				case "True":
+					form.answer8.value = "Incorrect";
+					form.TF8.value = "0";
+					break;
+				case "False":
+					form.answer8.value = "Correct";
+					form.TF8.value = "1";
+					break;
+				}
+ 
+			switch(Nine) {
+				case "True":
+					form.answer9.value = "Correct";
+					form.TF9.value = "1";
+					break;
+				case "False":
+					form.answer9.value = "Incorrect";
+					form.TF9.value = "0";
+					break;
+				}
+ 
+			switch(Ten) {
+				case "True":
+					form.answerten.value = "Incorrect";
+					form.TFten.value = "0";
+					break;
+				case "False":
+					form.answerten.value = "Correct";
+					form.TFten.value = "1";
+					break;
+				}
+ 
+			switch(Eleven) {
+				case "True":
+					form.answer11.value = "Incorrect";
+					form.TF11.value = "0";
+					break;
+				case "False":
+					form.answer11.value = "Correct";
+					form.TF11.value = "1";
+					break;
+				}
+ 
+			switch(Twelve) {
+				case "True":
+					form.answer12.value = "Incorrect";
+					form.TF12.value = "0";
+					break;
+				case "False":
+					form.answer12.value = "Correct";
+					form.TF12.value = "1";
+					break;
+				}
+ 
+			switch(Thirteen) {
+				case "True":
+					form.answer13.value = "Correct";
+					form.TF13.value = "1";
+					break;
+				case "False":
+					form.answer13.value = "Incorrect";
+					form.TF13.value = "0";
+					break;
+				}
+ 
+			switch(Fourteen) {
+				case "True":
+					form.answer14.value = "Correct";
+					form.TF14.value = "1";
+					break;
+				case "False":
+					form.answer14.value = "Incorrect";
+					form.TF14.value = "0";
+					break;
+				}
+ 
+			switch(Fifteen) {
+				case "True":
+					form.answer15.value = "Correct";
+					form.TF15.value = "1";
+					break;
+				case "False":
+					form.answer15.value = "Incorrect";
+					form.TF15.value = "0";
+					break;
+				}
+ 
+			switch(Sixteen) {
+				case "True":
+					form.answer16.value = "Correct";
+					form.TF16.value = "1";
+					break;
+				case "False":
+					form.answer16.value = "Incorrect";
+					form.TF16.value = "0";
+					break;
+				}
+			}
+	
+	
+	</script>
+	
+ 
+ 
+<form id="mc1">
+1. The amount realized from a sale or trade of property is the amount received for the asset minus the basis that will be recognized for tax purposes.
+	<select name="one">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer1" value=""><p>
+			<input type="hidden" name="TF1" value=""><p>
+ 
+<br>
+ 
+2. If land were an investment held in a trade or business, the gain or loss would be reported on Schedule D.
+	<select name="two">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer2" value=""><p>
+			<input type="hidden" name="TF2" vaue=""><p>
+ 
+<br>
+ 
+3. When a Section 1231 asset is sold, the gain can be either classified as an ordinary or capital gain.
+	<select name="three">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer3" value=""><p>
+			<input type="hidden" name="TF3" value=""><p>
+ 
+ 
+<br>
+ 
+4. The 25% bracket is a special rate that relates to capital gains from Section 1250 property used in a trade or business.
+	<select name="four">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer4" value=""><p>
+			<input type="hidden" name="TF4" value=""><p>
+ 
+<br>
+ 
+5. A taxpayer can deduct a loss on a security when the market price of the stock is less than the basis at the end of the year.
+	<select name="five">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer5" value=""><p>
+			<input type="hidden" name="TF5" value=""><p>
+ 
+<br>
+ 
+ 
+6. In general, the basis of property purchased is the cost of the asset including cash, debt obligations, and other property or services included in acquiring the asset.
+	<select name="six">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer6" value=""><p>
+			<input type="hidden" name="TF6" value=""><p>
+ 
+<br>
+ 
+7. The basis of property transferred to a taxpayer from a spouse or former spouse incident to a divorce is the FMV of the property at the date the divorce was final.
+	<select name="seven">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer7" value=""><p>
+			<input type="hidden" name="TF7" value=""><p>
+ 
+<br>
+ 
+8. Section 1221 assets are any asset used in a trade or business.
+	<select name="eight">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer8" value=""><p>
+			<input type="hidden" name="TF8" value=""><p>
+ 
+<br>
+ 
+9. Capital assets are usually defined by the IRC as any asset used for personal or investment purposes and sometimes are defined by the IRC as what they are not.
+	<select name="nine">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer9" value=""><p>
+			<input type="hidden" name=TF9" value=""><p>
+ 
+<br>
+ 
+10. Ordinary gains or losses produced outside the normal course of business relate to the sale of business property held less than one year and do not include the sale of accounts receivable.
+	<select name="ten">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answerten" value=""><p>
+			<input type="hidden" name="TFten" value=""><p>
+ 
+<br>
+ 
+11. All gains and losses on the sale of property that was held for more than one year is subject to preferential tax rates.
+	<select name="eleven">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer11" value=""><p>
+			<input type="hidden" name="TF11" value=""><p>
+ 
+<br>
+ 
+12. All net losses exceeding the $3,000 per year are carried over as long-term losses because they will have occurred more than one year ago.
+	<select name="twelve">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer12" value=""><p>
+			<input type="hidden" name="TF12" value=""><p>
+ 
+<br>
+ 
+13. For sales of Section 1231 business property, long-term gains are taxed at preferential rates while long-term losses are considered ordinary losses and deductible in the year they are incurred.
+	<select name="thirteen">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer13" value=""><p>
+			<input type="hidden" name="TF13" value=""><p>
+ 
+<br>
+ 
+14. Any Section 1245 gain is recognized as "ordinary" to the extent of the depreciation taken.
+	<select name="fourteen">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer14" value=""><p>
+			<input type="text" name="TF14" value=""><p>
+ 
+<br>
+ 
+15. To figure the gain or loss from the sale of property received as a gift, the donee must know the donor's adjusted basis as well as the FMV at the date of the gift.
+	<select name="fifteen">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer15" value=""><p>
+			<input type="hidden" name="TF15" value=""><p>
+ 
+<br>
+ 
+16. Unused capital losses in any one year carry forward indefinitely to offset any future short-term or long-term gains.
+	<select name="sixteen">
+			<option value="Default"></option>
+			<option value="True">True</option>
+			<option value="False">False</option>
+	</select>
+ 
+			<input type="text" name="answer16" value=""><p>
+			<input type="hidden" name="TF16" value=""><p>
+ 
+			<output name="x" for="TF1 TF2 TF3 TF4 TF5 TF6 TF7 TF8 TF9 TFten TF11 TF12 TF13 TF14 TF15 TF16"></output>
+ 
+<br>
+ 
+		<button type="button" value="Submit" onclick="writeAnswer(this.form);x.value=parseInt(TF1.value)+parseInt(TF2.value)+parseInt(TF3.value)+parseInt(TF4.value)+parseInt(TF5.value)+parseInt(TF6.value)+parseInt(TF7.value)+parseInt(TF8.value)+parseInt(TF9.value)+parseInt(TFten.value)+parseInt(TF11.value)+parseInt(TF12.value)+parseInt(TF13.value)+parseInt(TF14.value)+parseInt(TF15.value)+parseInt(TF16.value)";>Submit</button>
+ 
+ 
+		<button type="button" value="submit" onclick="alert(form.x.value)";>Score:</button>
+ 
+ 
+</form>
+ 
+ 
+</fieldset>
+ 
+<!-- Chapter 8 -->
+ 
+<fieldset style="margin-left: 50;margin-right: 50;">
+<header><h5><u>Chapter Eight</u></h5></header>
+<br />
+ 
+ 
+<script language="JavaScript">
+	function taxDefinition (form) {
+		Tax1 = form.tax.value;
+		alert (form.tax.value + ": General repairs and maintenance.");
+	}
+</script>
+ 
+ 
+<form>
+ 
+<button type="button" value="Deductible Repairs" name="tax" onclick="taxDefinition (this.form)">Deductible Repairs</button>
+ 
+</form>
+ 
+ 
+<script language="JavaScript">
+	function taxAnswerCheck (form) {
+			varAnswerCheck = form.varAnswer.value;
+			if (varAnswerCheck == "Deductible Repairs") {
+				alert (varAnswerCheck + " is correct!");
+			}else{
+				alert ("Wrong answer - please try again.")
+			}
+	}
+</script>
+ 
+<form>
+ 
+<p>General repairs and maintenance that are not considered to be <i>Capital Improvements</i> - expenditures that neither materially add to the vaue of the property nor appreciably prolong the property's life.</p>
+ 
+<br/>
+ 
+<button type="button" onclick="taxAnswerCheck(this.form)">Check</button>
+ 
+<input type="text" name="varAnswer" value=""><p>
+ 
+</form>
+ 
+<!--
+	YES or NO questions
+ 
+	-->
+ 
+ 
+<script language="Javascript">
+		function yesNo (form) {
+			var YN1 = form.YNS1.value;
+			var YN2 = form.YNS2.value;
+ 
+		switch(YN1) {
+			case "Yes":
+				form.YNA1.value = "Incorrect";
+				form.YNN1.value = "0";
+				break;
+			case "No": 
+				form.YNA1.value = "Correct";
+				form.YNN1.value = "1";
+				break;
+ 
+		}
+ 
+		switch(YN2) {
+			case "Yes":
+				form.YNA2.value = "Correct";
+				form.YNN2.value = "1";
+				break;
+			case "No":
+				form.YNA2.value = "Incorrect";
+				form.YNN2.value = "0";
+				break;
+		}
+ 
+	}
+ 
+</script>
+ 
+
+<script language="JavaScript">
+function correctAnswers (form) {
+	y.value = parseInt(YNN1.value)+parseInt(YNN2.value);
+	alert ("You got " + form.y.value + " correct!");
+}
+ </script>
+
+
+ 
+<form id="YNQ">
+	1. Ramone is a tax attorney - he rents an office building for $8,500 monthly. He is responsible for all taxes and expenses for maintenance of the building. Is he engaged in the trade or business of renting real estate?
+ 
+		<select name="YNS1">
+			<option value="Default"></option>   
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+ 
+		<input type="text" name="YNA1" value=""><p>
+		<input type="hidden" name="YNN1" value=""><p>
+ 
+		<br/>
+ 
+	2. Is this real?
+ 
+		<select name="YNS2">
+			<option value="Default"></option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+ 
+		<input type="text" name="YNA2" value=""><p>
+		<input type="hidden" name="YNN2" value=""><p>
+ 
+		<output name="y" for="YNN1 YNN2"></output>
+ 
+		<br>
+ 
+		<br/>
+ 
+	2. Kevin owns and lives in a duplex. He rents the other unit for $750 per month. He incurs the following expenses during the current year for the entire property:
+ 
+ 
+		<table id="table1" style="margin-left: 50; margin-top: 20; border-width: 0.05em;font-size: 15;" border="hidden" cellspacing="2"
+		cellpadding="5">
+			<tr>
+				<td>Mortgage Interest</td>
+				<td>$7,500</td>
+			</tr>
+			<tr>
+				<td>Property Taxes</td>
+				<td>$2,000</td> 
+			</tr>
+			<tr>
+				<td>Utilities</td>
+				<td>$1,500</td>
+			</tr>
+			<tr>
+				<td>Light Fix - Rental Unit</td>
+				<td>$100</td>
+			</tr>
+			<tr>
+				<td>Dishwasher Fix - Personal Unit</td>
+				<td>$250</td>
+			</tr>
+			<tr>
+				<td>Painted Exterior</td>
+				<td>$1,300</td>
+			</tr>
+			<tr>
+				<td>Insurance</td>
+				<td>$1,800</td>
+			</tr>
+			<tr>
+				<td>Depreciation (Entire Structure)</td>
+				<td>$7,000</td>
+			</tr>
+		</table>
+ 
+ 
+ 
+ 
+	<button type="button" value="submit" onclick="yesNo(this.form);y.value=parseInt(YNN1.value)+parseInt(YNN2.value)";>Submit</button>
+ 
+	<button type="button" value="submit" onclick="alert(form.y.value)";>Score:</button>
+ 
+</form>  
+ 
+</fieldset>
+ 
+<br></br>
+ 
+<fieldset>
+<form 
+	oninput="y.value=parseInt(m.value)*parseInt(x.value)+parseInt(b.value)">
+	Y = mx + b: <br />
+	Value m: <br />
+	<input type="number" name="m" value="0" min="-50" max="50" step="any"> <br />
+	Value x: <br />
+	<input type="number" name="x" value="0" min="-50" max="50" step="any"> <br />
+	Value b: <br />
+	<input type="number" name="b" value="0" min="-50" max="50" step="any"> <br />
+	<output name="y" step="any" for="m x b"></output> <br />
+ 
+	<button type="button" name="answer" onclick="alert(form.y.value + ' = ' + form.m.value + '(' + form.x.value + ')' + '+' + form.b.value)">Answer</button> <br />  
+ 
+</form>
+</fieldset>
+ 
+ 
+ 
+<footer>
+	<p>&copy; Hannah Scheer. All rights reserved. </p>
+</footer>
+		
+</body>
