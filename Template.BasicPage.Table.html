@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC “-//w3c//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+ 
+<html xmlns=“http://www.w3.org/1999/xhtml” lang=“en” xml:lang=“en”>
+ 
+<head>
+	<style>
+ 
+	fieldset {
+		margin: 50 450 50 450;
+		text-align: left;
+	}
+ 
+	table {
+		border-width: 0.25em;
+		border-style: solid;
+		border-collapse: collapse;
+		border-spacing: 5px;
+		padding: 10px;
+		border-color: black;
+	}
+ 
+	form {
+		font-family: calibri;
+	}
+ 
+	</style>
+ 
+  <meta name="author" content="Hannah Scheer"> </meta>
+  <meta name="description" content="XHTML Practice"> </meta>
+  <meta name="keywords" content=“Practice, XHTML, CSS, JavaScript”> </meta> 
+  <meta content=“width=device-width, initial-scale=1”> </meta>
+  <meta charset="UTF-8"> </meta>
+ 
+ 
+ <fieldset style="margin-right: 50;margin-left: 50;">
+
+ <Script language="JavaScript">
+ 	function calculateAGI (form) {
+ 		var TaxBracket = form.income.value;
+ 	
+
+ 		switch(TaxBracket) {
+ 			case "bracket1":
+ 				form.taxpercent.value = "10%";
+ 				break;
+ 			case "bracket2":
+ 				form.taxpercent.value = "15%";
+ 				break;
+ 			case "bracket3":
+ 				form.taxpercent.value = "25%";
+ 				break;
+ 			case "bracket4":
+ 				form.taxpercent.value = "28%";
+ 				break;
+ 			case "bracket5":
+ 				form.taxpercent.value = "33%";
+ 				break;
+ 			case "bracket6":
+ 				form.taxpercent.value = "35%";
+ 				break;
+ 			case "bracket7":
+ 				form.taxpercent.value = "39.6%";
+ 				break;   
+ 		}
+
+ 	}
+ 
+ 	</Script>
+ 
+ <form id="incomeform">
+	1. Determine your tax bracket (select the appropriate income range):
+
+		<select name="income">
+			<option value="Default">Please Select</option>
+			<option value="bracket1">< $9,275</option>
+			<option value="bracket2">$9,276-$37,650</option>
+			<option value="bracket3">$37,651-$91,150</option>
+			<option value="bracket4">$91,151-$190,150</option>
+			<option value="bracket5">$190,151-$413,350</option>
+			<option value="bracket6">$413,151-$415,050</option>
+			<option value="bracket7">$415,051 +</option>
+ 		</select>
+ 		<br/>
+
+ 		<input type="text" name="taxpercent" value=""><p>
+
+ 		<br/>
+ 
+
+ 	<button type="button" value="submit" onclick="calculateAGI(this.form);">Calculate Tax Bracket</button>
+
+ </form>
+   
+
+
+ <Script language="JavaScript">
+ 	function calculateExemption (form) {
+ 		var exemptionCalculation = form.status.value;
+ 	
+
+ 		switch(exemptionCalculation) {
+ 			case "Single":
+ 			case "MFS":
+ 				form.exemption.value = "4050";
+ 				form.deduction.value = "6300";
+ 				break;
+ 			case "MFJ":
+ 				form.exemption.value = "8100";
+ 				form.deduction.value = "12600";
+ 				break;
+ 			
+ 			case "Hoh":
+ 				form.exemption.value = "12150";
+ 				form.deduction.value = "9300";
+ 				break;
+ 		}
+
+ 	}
+ 
+ 	</Script>
+
+<script language="JavaScript">
+		function applyTaxRate (form) {
+			
+			var bracketone = 0.10;
+ 			var brackettwo = 0.15;
+ 			var bracketthree = 0.25;
+ 			var bracketfour = 0.28;
+ 			var bracketfive = 0.33;
+ 			var bracketsix = 0.35;
+ 			var bracketseven = 0.396; 
+			var taxRate = form.taxpercent.value;
+
+			switch(taxRate) {
+				case "10%":
+					form.taxrate.value = bracketone.toFixed(2);
+				case "15%": 
+					form.taxrate.value = brackettwo.toFixed(2);
+				case "25%":
+					form.taxrate.value = bracketthree.toFixed(2);
+				case "28%":
+					form.taxrate.value = bracketfour.toFixed(2);
+				case "33%":
+					form.taxrate.value = bracketfive.toFixed(2);
+				case "35%":
+					form.taxrate.value = bracketsix.toFixed(2);
+				case "39.6%"
+					form.taxrate.value = bracketseven.toFixed(2);
+			}
+	
+		}
+	</script>
+
+	
+	<form oninput="AGI.value=parseInt(income.value)-parseInt(forAGI.value);taxableincome.value=parseInt(AGI.value)-parseInt(deduction.value)-parseInt(exemption.value);">
+
+	
+
+	2. Determine your filing status: 
+		<br>
+ 			<select name="status">
+ 				<option value="Default">Please Select</option>
+ 				<option value="Single">Single</option>
+ 				<option value="MFJ">Married (Filing Jointly)</option>
+ 				<option value="MFS">Married (Filing Seperate)</option>
+ 				<option value="Hoh">Head of Household</option>
+ 			</select>
+
+
+ 	<button type="button" value="submit" onclick="calculateExemption(this.form);">Calculate Exemptions</button>
+
+
+
+		<table id="table1" style="margin-left: 50; margin-top: 20; border-width: 0.05em;font-size: 15;" border="hidden" cellspacing="2"
+		cellpadding="5">
+	
+			<tr>
+				<td>Gross Income</td>
+				<td><input type="number" name="income" value="" min="0" max="any" step="any"></td>
+			</tr><br>
+			<tr>
+				<td>Deductions for AGI</td>
+				<td><input type="number" name="forAGI" value="" min="0" max="any" step="any"></td> 
+			</tr><br> 
+			<tr>
+				<td>Adjusted Gross Income</td>
+				<td><input type="number" name="AGI" value="" min="0" max="any" step="any"></td>
+			</tr><br>
+			<tr>
+				<td>Deductions (Standard or Itemized)</td>
+				<td><input type="text" name="deduction" value="" min="0" max="any" step="any"></td>
+			</tr><br>
+			<tr>
+				<td>Exemptions</td>
+				<td><input type="text" name="exemption" value="" min="0" max="any" step="any"></td>
+			</tr><br>
+			<tr>
+				<td>Taxable Income</td>
+				<td><input type="number" name="taxableincome" value="" min="0" max="any" step="any"></td>
+			</tr><br>
+			<tr>
+				<td>Tax Rate</td>
+				<td><input type="text" name="taxrate" value="" min="any" max="any" step="any"></td>
+			</tr><br>
+			<tr>
+				<td>Tax Liability</td>
+				<td><input name="taxliability" step="any"></td>
+			</tr><br>
+		</table>
+		<br/>
+		<button type="button" value="submit" onclick="applyTaxRate(this.form);">Calculate Liability</button>
+ 
+ 
+</form>  
+ 
+</fieldset>
+ 
+<br></br>
+ 
+ 
+<footer>
+	<p>&copy; Hannah Scheer. All rights reserved. </p>
+</footer>
+		
+</body>
